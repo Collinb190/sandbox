@@ -5,8 +5,8 @@ This will decrypt messages
 
 x = input("Enter the message to be decoded\n")
 
-for num in x:
-    num = int(num)
-    print(f"{chr(num)}", end=" ")
+numbers = x.split()
+for i in range(0, len(numbers)):
+    num = int(numbers[i])
+    print(f"{chr(num)}", end="")
 print()
-
