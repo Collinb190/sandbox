@@ -1,3 +1,7 @@
 #!/usr/bin/python3
-print("Hello World")
+"""This module tests an import"""
+from myFun import myFun
+
+
+myFun()
 
