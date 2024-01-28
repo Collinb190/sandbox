@@ -2,13 +2,17 @@
 """This module will define my function"""
 
 
-def myFun():
-    print("Time to dab!")
+class User:
+    """
+    This class will define users
+    """
+    def __init__(self, full_name) -> None:
+        self.name = full_name
+        self.points = 0
 
+    def display_user_info(self):
+        """Displays the users information"""
+        print(f"Name: {self.name}\nScore: {self.points}")
 
-if __name__ == "__main__":
-    myFun()
-    myList = [1, 3, 5]
-    print(myList)
-    myList.append(6)
-    print(myList)
+player_1 = User("Gamer_Tag")
+player_1.display_user_info()
