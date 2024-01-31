@@ -16,4 +16,6 @@ class User:
 
 if __name__ == "__main__":
     player_1 = User("Elden Lord")
+    player_2 = User("Ender")
+    player_2.display_user_info()
     player_1.display_user_info()
