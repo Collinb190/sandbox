@@ -6,13 +6,14 @@ class User:
     """
     This class will define users
     """
-    def __init__(self, full_name) -> None:
-        self.name = full_name
+    def __init__(self, game_tag) -> None:
+        self.name = game_tag
         self.points = 0
 
     def display_user_info(self):
         """Displays the users information"""
         print(f"Name: {self.name}\nScore: {self.points}")
 
-player_1 = User("Gamer_Tag")
-player_1.display_user_info()
+if __name__ == "__main__":
+    player_1 = User("Elden Lord")
+    player_1.display_user_info()
